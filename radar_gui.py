@@ -191,7 +191,8 @@ class RadarGUI:
             py = self.center_y - mapped_dist * math.sin(rad_c)
             self.canvas.create_oval(px-5, py-5, px+5, py+5, fill="#ff3366", outline="#ff6699", width=2, tags="dynamic")
         
-        # History trail
+        # History trail 
+        
         new_hist = []
         for p in self.point_history:
             alpha = int(p[2])
